@@ -28,7 +28,7 @@ amir.firstName = "Amir";
 amir.secondName = "MuhammadAmin";
 amir.isOnline = true;
 amir.description = "Yashash yaxshi, yaxshi yashash undanda yaxshi)";
-amir.phoneNumber = 998998494874;
+amir.phoneNumber = 998123456789;
 amir.userName = "Amir_Muhammadamin";
 
 amir.aboutUser();
@@ -37,5 +37,5 @@ amir.aboutUser();
 // Foydalanuvchi familiyasi: MuhammadAmin
 // Foydalanuvchi online.
 // Foydalanuvchi haqida: Yashash yaxshi, yaxshi yashash undanda yaxshi)
-// Foydalanuvchi raqami: 998998494874
+// Foydalanuvchi raqami: 998123456789
 // Foydalanuvchi nomi: Amir_Muhammadamin
