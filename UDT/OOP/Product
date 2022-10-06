@@ -1,0 +1,54 @@
+class Product
+{
+	string title;
+	float rating;
+	int price;
+	string currency;
+	string character;
+	string description;
+	int discount;
+	int inStock;
+
+	void productDetail()
+	{
+		print "Mahsulot nomi: " + this.title + /n;
+		print "Mahsulot bahosi: " + this.rating + /n;
+		print "Mahsulot asl narxi: " + this.price + /n;
+		if(this.discount){
+			print "Mahsulotga berilgan chegirma miqdori: " + this.discount + /n;
+			discountPrice = price - ((price / 100) * this.discount);
+			print "Mahsulotning chegirmadagi narxi: " + discountPrice + /n;
+		}
+		print "Pul birligi: " + this.currency + /n;
+		print "Mahsulot xususiyati: " + this.character + /n;
+		print "Mahsulot haqida: " + this.description + /n;
+		
+		if(this.inStock > 0){
+			print "Sotuvda " + this.inStock + " ta mahsulot bor." + /n;
+		} else {
+			print "Afsuski mahsulot tugagan!" + /n;
+		}
+	}
+}
+
+Product iphone14 = new Product();
+iphone14.title = "Iphone 14";
+iphone14.rating = 4.5;
+iphone14.price = 1000;
+iphone14.discount = 50;
+iphone14.currency = "USD";
+iphone14.character = "12MB camera, Full HD screen, 128GB/8GB";
+iphone14.description = "So'nggi rusumdagi telefon";
+iphone14.inStock = 11;
+
+iphone14.productDetail() 
+
+// Mahsulot nomi: Iphone 14
+// Mahsulot bahosi: 4.5
+// Mahsulot asl narxi: 1000
+// Mahsulotga berilgan chegirma miqdori: 50
+// Mahsulotning chegirmadagi narxi: 500
+// Pul birligi: USD
+// Mahsulot xususiyati: 12MB camera, Full HD screen, 128GB/8GB
+// Mahsulot haqida: So'nggi rusumdagi telefon
+// Sotuvda 11 ta mahsulot bor.
