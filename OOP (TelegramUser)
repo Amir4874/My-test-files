@@ -1,0 +1,41 @@
+class TelegramUser
+{
+	string firstName;
+	string secondName;
+	boolean isOnline;
+	string description;
+	int phoneNumber;
+	string userName;
+
+	void aboutUser()
+	{
+		print "Foydalanuvchi ismi: " + this.firstName + /n;
+		print "Foydalanuvchi familiyasi: " + this.secondName + /n;
+		if(isOnline){
+			print "Foydalanuvchi online." /n;
+		}else{
+			print "Foydalanuvchi online emas." /n;
+		}
+		print "Foydalanuvchi haqida: " + this.description + /n;
+		print "Foydalanuvchi raqami: " + this.phoneNumber + /n;
+		print "Foydalanuvchi nomi: " + this.userName + /n;
+	}
+}
+
+TelegramUser amir = new TelegramUser();
+
+amir.firstName = "Amir";
+amir.secondName = "MuhammadAmin";
+amir.isOnline = true;
+amir.description = "Yashash yaxshi, yaxshi yashash undanda yaxshi)";
+amir.phoneNumber = 998998494874;
+amir.userName = "Amir_Muhammadamin";
+
+amir.aboutUser();
+
+// Foydalanuvchi ismi: Amir
+// Foydalanuvchi familiyasi: MuhammadAmin
+// Foydalanuvchi online.
+// Foydalanuvchi haqida: Yashash yaxshi, yaxshi yashash undanda yaxshi)
+// Foydalanuvchi raqami: 998998494874
+// Foydalanuvchi nomi: Amir_Muhammadamin
