@@ -7,8 +7,7 @@ Ekranga 1dan 5gacha quyidagidagi ko'rinishda raqaamlar chiqishi kerak:
 
 ANSWER
 
-for (int i = 1; i <= 5; i++)
-{
+for (int i = 1; i <= 5; i++) {
   print i + " ";
 }
 
