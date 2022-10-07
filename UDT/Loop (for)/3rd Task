@@ -22,3 +22,6 @@ Ekranga 3 karraning jadvalini quyidagiday chiqarish kerak:
 3*9=27
 
 3*10=30
+
+
+for(i = 1; i <= 10; i++)
