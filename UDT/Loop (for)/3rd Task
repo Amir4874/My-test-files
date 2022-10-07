@@ -23,8 +23,29 @@ Ekranga 3 karraning jadvalini quyidagiday chiqarish kerak:
 
 3*10=30
 
+ANSWER
 
 for(int i = 1; i <= 10; i++) {
   print "3*" + i + "=" 3 * i + /n;
   print /n;
 }
+
+// 3*1=3
+// 
+// 3*2=6
+//
+// 3*3=9
+//
+// 3*4=12
+// 
+// 3*5=15
+// 
+// 3*6=18
+// 
+// 3*7=21
+// 
+// 3*8=24
+// 
+// 3*9=27
+// 
+// 3*10=30
