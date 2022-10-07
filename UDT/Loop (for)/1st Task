@@ -1,0 +1,15 @@
+Source: https://vertex-academy.com/tutorials/ru/zadachi-na-cikl/
+
+1st TASK
+
+Ekranga 1dan 5gacha quyidagidagi ko'rinishda raqaamlar chiqishi kerak:
+1 2 3 4 5
+
+ANSWER
+
+for (int i = 1; i <= 5; i++)
+{
+  print i + " ";
+}
+
+// 1 2 3 4 5
