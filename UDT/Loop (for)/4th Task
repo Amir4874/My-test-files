@@ -1,0 +1,36 @@
+Source: https://vertex-academy.com/tutorials/ru/zadachi-na-cikl/
+
+4th TASK
+
+Shunday dastur yozish kerakki, bu dasturga istalgan butun son kirita bilinsin.
+Dastur esa 1dan shu kiritilgan songacha bo'lgan barcha sonlarni yig'indisini,
+quyidagi ko'rinishda ekranga chiqarsin.
+
+Masalan dasturga 3 berilsa:
+1+2+3=6
+Dasturga 6 berilsa:
+1+2+3+4+5+6=21
+--------------------------------------------------------------------------------
+ANSWER
+
+void summNumbers(int number)
+{
+  int summ = 0;
+  for (int i = 1; i <= number; i++) {
+    if (i < number) {
+        print i + "+";
+    } else if (i == number) {
+        print i + "=";
+        for (int i = 1; i <= number; i++) {
+          summ = summ + i
+        }
+        print summ;
+    }
+  }
+}
+
+summNumbers(5);
+// 1+2+3+4+5=15
+summNumbers(11);
+// 1+2+3+4+5+6+7+8+9+10+11=66
+
