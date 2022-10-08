@@ -14,7 +14,7 @@ class Product
 		print "Mahsulot nomi: " + this.title + /n;
 		print "Mahsulot bahosi: " + this.rating + /n;
 		print "Mahsulot asl narxi: " + this.price + /n;
-		if(this.discount){
+		if(this.discount > 0){
 			print "Mahsulotga berilgan chegirma miqdori: " + this.discount + /n;
 			discountPrice = price - ((price / 100) * this.discount);
 			print "Mahsulotning chegirmadagi narxi: " + discountPrice + /n;
