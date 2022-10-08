@@ -14,7 +14,7 @@ void productDetail(Product item)
   print "Mahsulot nomi: " + item.title + /n;
 	print "Mahsulot bahosi: " + item.rating + /n;
 	print "Mahsulot asl narxi: " + item.price + /n;
-	if(item.discount){
+	if(item.discount > 0){
 		print "Mahsulotga berilgan chegirma miqdori: " + item.discount + /n;
 		discountPrice = price - ((price / 100) * item.discount);
 		print "Mahsulotning chegirmadagi narxi: " + discountPrice + /n;
