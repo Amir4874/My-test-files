@@ -11,7 +11,7 @@ class TelegramUser
 	{
 		print "Foydalanuvchi ismi: " + this.firstName + /n;
 		print "Foydalanuvchi familiyasi: " + this.secondName + /n;
-		if(isOnline){
+		if(this.isOnline){
 			print "Foydalanuvchi online." /n;
 		}else{
 			print "Foydalanuvchi online emas." /n;
