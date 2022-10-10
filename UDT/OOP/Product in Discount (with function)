@@ -13,13 +13,13 @@ void productDetail(Product item)
 {
   print "Mahsulot nomi: " + item.title + /n;
 	print "Mahsulot bahosi: " + item.rating + /n;
-	print "Mahsulot asl narxi: " + item.price + /n;
+	print "Mahsulot asl narxi: " + item.price + " " + item.currency + /n;
+	
 	if(item.discount > 0){
 		print "Mahsulotga berilgan chegirma miqdori: " + item.discount + /n;
 		discountPrice = price - ((price / 100) * item.discount);
-		print "Mahsulotning chegirmadagi narxi: " + discountPrice + /n;
+		print "Mahsulotning chegirmadagi narxi: " + discountPrice + " " + item.currency + /n;
 	}
-	print "Pul birligi: " + item.currency + /n;
 	print "Mahsulot xususiyati: " + item.character + /n;
 	print "Mahsulot haqida: " + item.description + /n;
 	
@@ -45,8 +45,7 @@ productDetail(iphone14)
 // Mahsulot bahosi: 4.5
 // Mahsulot asl narxi: 1000
 // Mahsulotga berilgan chegirma miqdori: 50
-// Mahsulotning chegirmadagi narxi: 500
-// Pul birligi: USD
+// Mahsulotning chegirmadagi narxi: 500 USD
 // Mahsulot xususiyati: 12MB camera, Full HD screen, 128GB/8GB
 // Mahsulot haqida: So'nggi rusumdagi telefon
 // Sotuvda 11 ta mahsulot bor.
