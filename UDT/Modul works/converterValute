@@ -5,10 +5,10 @@ void converterValute(int sum, string valuteType, string exchangeTo)
 
 	// bu yerda kodlar yoziladi
 	if (valuteType == USD && exchangeTo == toRUB) {
-		value = (sum * usdRate) / rubRate
+		value = (sum * usdRate) / rubRate;
 		print value;
 	} else if (valuteType == RUB && exchangeTo == toUSD) {
-		value = (sum * rubRate) / usdRate
+		value = (sum * rubRate) / usdRate;
 		print value;	
 	}
 }
