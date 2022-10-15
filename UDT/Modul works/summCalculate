@@ -1,0 +1,17 @@
+foo() degan funksiya yasang. U bitta int turli parametr qabul qilsin. Men funksiyaga argument sifatida qaysi raqamni bersam, 
+funksiya menga 1 dan boshlab o'sha songacha bo'lgan barcha raqamlarning umumiy yig'indisini chiqarsin.
+
+Misol: 
+    foo(3);   // 6    
+    foo(5);   // 15 
+    foo(10);   // 55
+
+
+foo(int number)
+{
+	int summ = 0
+	for (i = 1; i <= number; i++) {
+		summ = summ + i
+	}
+	print value;
+}
