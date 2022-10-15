@@ -13,5 +13,5 @@ foo(int number)
 	for (i = 1; i <= number; i++) {
 		summ = summ + i;
 	}
-	print value;
+	print summ;
 }
