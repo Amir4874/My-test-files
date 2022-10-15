@@ -1,0 +1,81 @@
+class Car
+{
+	float benzine;
+	float spend;
+	// spend bu - mashinaning har km uchun sarflaydigan yoqilg'i miqdori.
+	float spend2 = spend * benzine
+
+	void addBenzine(int litr)
+	{
+		// bu yerda benzinga litrlar qo’shiladi
+		benzine = benzine + litr;
+		return;
+	}    
+
+	void drive(int km)
+	{
+		if (benzine == 0.0) {
+			// benzin yo'q
+			print "Afsuski yoqilg'i mavjud emas!";
+		} else if (benzine > 0.0) {
+			foo = benzin / spend
+			if (foo < km)	{
+				// benzin yetmasa
+				print "Afsuski ushbu masofa uchun yoqilg'i yetarli emas!";
+				print "Ushbu yoqilg'i yana " + spend2 + " km masofaga yetadi.";
+			} else {
+				// benzin yetsa
+				benzine = benzine - (km * spend)
+				print km + " km masofa bosib o'tildi!";
+			}
+		}
+	}   
+
+	void showBenzine()
+	{
+		if (benzine == 0.0) {
+			print "Afsuski yoqilg'i mavjud emas!";
+		} else {
+			// bu yerda ekranga benzin qiymati chiqadi
+			print "Xozirda bakda: " + benzine + " l yoqilg'i bor. \n";
+			print "Ushbu yoqilg'i yana " + spend2 + " km masofaga yetadi.";
+		}
+	} 
+}
+
+Car car = new Car();
+car.benzine = 0.0;
+car.spend = 0.1;
+
+// mashinaga benzin quyamiz
+car.addBenzine(1.0);
+car.showBenzine(); // Xozirda bakda: 1 l yoqilg'i bor
+// Ushbu yoqilg'i yana 10 km masofaga yetadi.
+
+// 10 km'ga yur. 
+car.drive(10.0); 
+car.showBenzine(); // Afsuski yoqilg'i mavjud emas!
+
+// benzin yetmasa mashina yurmaydi
+car.drive(10.0); // benzin yetmaydi
+
+car.addBenzine(10.0);
+car.showBenzine(); // 10.0
+
+car.addBenzine(5.0);
+car.showBenzine(); // 15.0
+
+car.drive(100.0);
+car.showBenzine(); // 5.0
+
+car.drive(70.0); // benzin yetmaydi
+car.showBenzine(); // 5.0
+
+car.drive(10.0);
+car.showBenzine(); // 4.0
+
+car.drive(50.0); // benzin yetmaydi
+car.showBenzine(); // 4.0
+
+car.drive(40.0);
+car.showBenzine(); // 0.0
