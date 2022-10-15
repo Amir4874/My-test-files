@@ -1,0 +1,21 @@
+void converterValute(int sum, string valuteType, string exchangeTo)
+{
+	int usdRate = 11000;
+	int rubRate = 115;
+
+	// bu yerda kodlar yoziladi
+	if (valuteType == USD && exchangeTo == toRUB) {
+		value = (sum * usdRate) / rubRate
+		print value;
+	} else if (valuteType == RUB && exchangeTo == toUSD) {
+		value = (sum * rubRate) / usdRate
+		print value;	
+	}
+}
+
+converterValute(500, USD, toRUB);  //  47826
+converterValute(1500, RUB, toUSD);  //  15.6
+
+Bu yerda 1-parametr bu summa misol uchun 100, 3000, 250000  va h.z.
+2-parametr valyuta turi (1-parametrdagi valyutani turi)
+3-parametr bu - 1-parametrdagi valyutani qaysi valyutaga konvertatsiya qilish kerakligini ko'rsatuvchi qiymat
