@@ -18,14 +18,14 @@ class Car
 			// benzin yo'q
 			print "Afsuski yoqilg'i mavjud emas!";
 		} else if (benzine > 0.0) {
-			foo = benzin / spend
+			foo = benzin / spend;
 			if (foo < km)	{
 				// benzin yetmasa
 				print "Afsuski ushbu masofa uchun yoqilg'i yetarli emas!";
 				print "Ushbu yoqilg'i yana " + spend2 + " km masofaga yetadi.";
 			} else {
 				// benzin yetsa
-				benzine = benzine - (km * spend)
+				benzine = benzine - (km * spend);
 				print km + " km masofa bosib o'tildi!";
 			}
 		}
